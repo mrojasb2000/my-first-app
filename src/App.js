@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import HelloWorld from './components/HelloWorld';
+import logo from './logo.svg'
+import './App.css'
+import HelloWorld from './components/HelloWorld'
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
         >
           Learn React
         </a>
-        <HelloWorld name="Mavro"/>
+        <HelloWorld name="Mavro" />
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
