@@ -3,6 +3,11 @@ import './App.css'
 import HelloWorld from './components/HelloWorld'
 
 function App() {
+  const user = {
+    name: 'Mauricio',
+    age: 49,
+    role: 'Developer',
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -18,8 +23,7 @@ function App() {
         >
           Learn React
         </a>
-        <HelloWorld name="Mavro" age="49" />
-        <HelloWorld name="Pedro" />
+        <HelloWorld user={user} />
       </header>
     </div>
   )
