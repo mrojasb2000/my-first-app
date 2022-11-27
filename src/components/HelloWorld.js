@@ -1,5 +1,10 @@
 import React from 'react'
 
 export default function HelloWorld(props) {
-  return <div>HelloWorld {props.name}</div>
+  const strFormatted = (props) => {
+    const name = props.name
+    const age = props.age ? ' your age is ' + props.age : ''
+    return 'HelloWorld ' + name + age
+  }
+  return <div>{strFormatted(props)}</div>
 }
