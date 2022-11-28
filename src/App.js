@@ -8,6 +8,11 @@ function App() {
     age: 49,
     role: 'Developer',
   }
+
+  const greeting = () => {
+    console.log('Hello World!')
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,7 +28,7 @@ function App() {
         >
           Learn React
         </a>
-        <HelloWorld user={user} />
+        <HelloWorld user={user} fn={greeting} />
       </header>
     </div>
   )
