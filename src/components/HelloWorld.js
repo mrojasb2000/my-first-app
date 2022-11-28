@@ -5,5 +5,13 @@ export default function HelloWorld(props) {
     const age = user.age ? ' your age is ' + user.age : ''
     return 'HelloWorld ' + user.name + age
   }
-  return <div>{strFormatted(props.user)}</div>
+  const greeting = () => {
+    alert('Hello World!')
+  }
+  return (
+    <div>
+      {strFormatted(props.user)}
+      <button onClick={greeting}>Hello World</button>
+    </div>
+  )
 }
