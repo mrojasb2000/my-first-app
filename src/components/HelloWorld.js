@@ -9,7 +9,7 @@ export default function HelloWorld(props) {
   return (
     <div>
       {strFormatted(props.user)}
-      <button onClick={props.fn}>Hello World</button>
+      <button onClick={() => props.fn(props.user.name)}>Hello World</button>
     </div>
   )
 }

@@ -9,8 +9,8 @@ function App() {
     role: 'Developer',
   }
 
-  const greeting = () => {
-    console.log('Hello World!')
+  const greeting = (name) => {
+    console.log('Hello World! ' + name)
   }
 
   return (
